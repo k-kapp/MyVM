@@ -1,0 +1,15 @@
+
+#ifndef GLOBAL_CONSTS_H
+#define GLOBAL_CONSTS_H
+
+
+#define MAX_STMT_LENGTH 256
+#define NUM_RESERVED 10
+#define MAX_KEYWORD_LEN 15
+#define STMT_ARR_INCR 5
+#define MAIN_STACK_INCR 5
+#define SYMBOL_TABLE_INCR 5
+#define MAX_IDENT_LENGTH 32
+
+
+#endif // GLOBAL_CONSTS_H

@@ -1,0 +1,61 @@
+push 210
+push 3450
+pop x
+pop y
+
+push x
+push -1
+mul
+push y
+add
+
+ifgt y_larger
+
+x_larger:
+pop
+push y
+pop curr_gcd
+jmp div_x
+
+y_larger:
+pop
+push x
+pop curr_gcd
+
+div_x:
+push x
+begin_div_x:
+push curr_gcd
+push -1
+mul
+add
+ifeq div_y
+iflt decr_gcd
+jmp begin_div_x
+
+div_y:
+pop
+push y
+begin_div_y:
+push curr_gcd
+push -1
+mul
+add
+ifeq done
+iflt decr_gcd
+jmp begin_div_y
+
+decr_gcd:
+pop
+push curr_gcd
+push -1
+add
+pop curr_gcd
+jmp div_x
+
+done:
+push curr_gcd
+print
+
+
+

@@ -1,0 +1,47 @@
+push 10
+iflt assign_false
+assign_true:
+push 1
+pop positive
+jmp done_if
+assign_false:
+push 0
+pop positive
+done_if:
+
+label:
+
+dup
+push positive
+ifgt handle_pos
+
+handle_neg:
+pop
+start_neg_loop:
+ifeq print_even
+ifgt print_odd:
+push 2
+add
+jmp start_neg_loop
+
+handle_pos:
+pop
+start_pos_loop:
+ifeq print_even
+iflt print_odd
+push -2
+add
+jmp start_pos_loop
+
+print_even:
+pop
+
+jmp done_print
+print_odd:
+pop
+print
+done_print:
+
+push -1
+add
+ifgt label
