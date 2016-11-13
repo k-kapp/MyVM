@@ -1,6 +1,6 @@
 # MyVM
 
-All source code files must have the extension .vml. 
+All source code files must have the extension .vml. Statements are separated by newline characters.
 
 The commands of the VM are shown below. Parameters, where applicable, are shown in parentheses after the statement name:
 
