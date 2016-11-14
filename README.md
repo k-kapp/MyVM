@@ -14,3 +14,9 @@ The commands of the VM are shown below. Parameters, where applicable, are shown 
 + ifeq (label)              : jump to label specified if topmost value of stack is equal to zero
 + dup                       : pushes a duplicate of the value at the top of the stack, onto the top of the stack
 + print                     : prints the value at the top of the stack to the screen
+
+Three example source files are given.
+
++ test_mul.vml: simple illustration of how the push, mul and print commands work
++ unevens.vml: prints uneven numbers between 10 and 0 in decreasing order
++ gcd.vml: finds the greatest common denominator between two numbers (must be specified in source code)
