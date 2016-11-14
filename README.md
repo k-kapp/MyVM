@@ -19,4 +19,4 @@ Three example source files are given.
 
 + test_mul.vml: simple illustration of how the push, mul and print commands work
 + unevens.vml: prints uneven numbers between 10 and 0 in decreasing order
-+ gcd.vml: finds the greatest common denominator between two numbers (must be specified in source code)
++ gcd.vml: finds the greatest common denominator between two numbers (must be specified in source code). In the example here these numbers are 210 and 3450.
