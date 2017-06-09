@@ -2,7 +2,7 @@
 
 All source code files must have the extension .vml. Statements are separated by newline characters.
 
-Code organisation is at the moment slightly messy. Not everything that is in the parser C source file, for example, is really part of the parser.
+Code organisation is at the moment slightly messy. Not everything that is in the parser C source file, for example, is really part of the parser. Hope I get some time to change this soon.
 
 The commands of the VM are shown below. Parameters, where applicable, are shown in parentheses after the statement name:
 
